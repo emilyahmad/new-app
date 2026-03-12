@@ -1,21 +1,29 @@
 import {createRoot, useState} from 'react-dom/client'
 
-import { name, age } from "./person.js"; // destructure
-import message from "./message.js";
+// import { name, age } from "./person.js"; // destructure
+// import message from "./message.js";
+import Header from './Vehicle.jsx';
 
-function Counter() {
-  const [count, setCount] = useState(0);
+// class Car extends React.Component {
+//   render() {
+//     return <h2>imma car</h2>;
+//   }
+// }
 
-  return (
-    <button onClick={() => setCount(count + 1)}>
-      Count: {count}
-    </button>
-  );
-}
+// class Garage extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <h1>who lives in mi garage</h1>
+//         <Car />
+//       </div>
+//     )
+//   }
+// }
 
 // createRoot() defines HTML element & displays
-// render() what is rendered in HTML container
+// render() what is renmdered in HTML container
 // result displayed in root element
 createRoot(document.getElementById('root')).render(
-  <Counter />
+  <Header/>
 );
