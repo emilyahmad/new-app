@@ -31,3 +31,59 @@
 // let name1 = "Jane";
 
 // let text1 = highlight`Hello ${name1} and ${name2}, how are you?`;
+
+// function Car({color = "blue", brand}) {
+//     return (
+//         <h2>my {color} {brand}</h2>
+//     );
+// }
+
+// const carInfo = ["Ford", "Mustang"];
+
+// createRoot(document.getElementById('root')).render(
+//     <Car brand="Ford"/>
+// );
+
+// function Son(props) {
+//     return (
+//         <div style={{background: 'lightgreen'}}>
+//             <h2>Son</h2>
+//             <div>{props.children}</div>
+//         </div>
+//     );
+// }
+
+// function Daughter(props) {
+//     const {brand, model} = props;
+//     return (
+//         <div style={{brackground: 'lightblue'}}>
+//             <h2>Daughter</h2>
+//             <div>{props.children}</div>
+//         </div>
+//     );
+// }
+
+// function Parent() {
+//     return (
+//         <div>
+//             <h1>my 2 kiddos</h1>
+//             <Son>
+//                 <p>
+//                     this was written in parent component,
+//                     displayed as part of son component
+
+//                 </p>
+//             </Son>
+//             <Daughter>
+//                 <p>
+//                     written in parent component,
+//                     displayed in daughter component
+//                 </p>
+//             </Daughter>
+//         </div>
+//     );
+// }
+
+// createRoot(document.getElementById('root')).render(
+//     <Parent />
+// );
